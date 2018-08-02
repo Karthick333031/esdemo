@@ -9,7 +9,7 @@
 
 - Run esdemo-setup.sh
   * pre-req: docker, curl, virtualenv
-  * Launch docker, sets up es, loads some test data and installs python modules
+  * Launches docker, sets up es, loads some test data and installs python modules
 
 - In the code path: Run
   * python esdemo.py
