@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> ES Demo App</title>
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='jumbotron-narrow.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='esdemo.css') }}">
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/search.js"></script>
+   
+  </head>
+
+  <script>
+    $(document).on('click', '.btn', function() {
+
+    var s = document.getElementById('inputName').value       
+    if (s != undefined && s != null) {
+        window.location = '/search?s=' + s;
+    }
+})
+
+  </script>
+
+  <body>
+
+    <div class="container">
+
+      <div class="jumbotron">
+        <h1>Search for Pacakges</h1>        
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus/>
+        <br></br>
+
+        <input type="button" name="buttonExecute" value="Search" class="btn btn-lg btn-primary btn-block" data-s="" />
+
+
+      </div>
+
+      
+
+
+    </div>
+  </body>
+</html>

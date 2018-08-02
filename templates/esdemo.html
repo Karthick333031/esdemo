@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask ES Demo App</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='esdemo.css') }}">
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+
+        <h1>ES Demo App</h1>
+        <form class="form-search">
+        <input type="search" name="s" id="searchBox" class="form-control" placeholder="Search" required autofocus>
+        <button id="btnSearch" class="btn btn-lg btn-primary btn-block" type="button">Search</button>
+      </form>
+ 
+       
+    </div>
+  </body>
+</html>
